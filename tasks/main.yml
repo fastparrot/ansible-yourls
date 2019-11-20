@@ -5,7 +5,7 @@
     update_cache: yes
 
 - name: create web directory
-  file: 
+  file:
     path: "{{ yourls_www_dir }}"
     state: directory
     mode: '0755'
@@ -17,7 +17,7 @@
     remote_src: yes
 
 - name: Move YOURLS
-  copy: 
+  copy:
     src: /root/YOURLS-{{ yourls_version }}/
     dest: "{{ yourls_www_dir }}/"
     remote_src: yes
@@ -46,5 +46,5 @@
 
 - name: Reload php-fpm
   service:
-    name: {{ yourls_php_version }}-fpm
+    name: "{{ yourls_php_version }}-fpm"
     state: reloaded
