@@ -51,8 +51,8 @@ Example Playbook
       roles:
         - geerlingguy.apache
         - geerlingguy.php
-		- geerlingguy.apache2-php-fpm
-		- yourls
+        - geerlingguy.apache2-php-fpm
+        - yourls
 
 Author Information
 ------------------
