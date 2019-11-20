@@ -35,8 +35,10 @@ galaxy_info:
   #
   platforms:
   - name: Ubuntu
-  #   versions:
-  #   - all
+    versions:
+    - bionic
+    - disco dingo
+    - eoan
   #   - 25
   # - name: SomePlatform
   #   versions:
