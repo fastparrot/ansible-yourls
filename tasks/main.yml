@@ -37,7 +37,8 @@
     src: files/htaccess
     dest: "{{ yourls_www_dir }}"
 
-- template:
+- name: Copy template into yourls config 
+  template:
     src: templates/config.php.j2
     dest: "{{ yourls_www_dir }}/user/config.php"
     owner: root
