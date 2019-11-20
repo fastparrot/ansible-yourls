@@ -44,8 +44,3 @@
     owner: root
     group: root
     mode: 0644
-
-- name: Reload php-fpm
-  service:
-    name: "{{ yourls_php_version }}-fpm"
-    state: reloaded
