@@ -1,0 +1,25 @@
+---
+# For more information about YOURLS vars check here:
+# https://github.com/YOURLS/YOURLS/blob/master/user/config-sample.php
+yourls_version: 1.7.4
+yourls_www_dir: /var/www/html
+yourls_image: image.jpg
+yourls_index: yourls_index.html
+yourls_db_name: example_db
+yourls_db_user: example_user
+yourls_db_host: mysql.example.com
+yourls_db_prefix: yourls_
+yourls_site: http://example.com
+yourls_hours_offset: -8
+yourls_lang: ""
+yourls_unique_urls: "true"
+yourls_private: "true"
+yourls_cookiekey: 1234567890asdfqwerzxcvZXCVASDF
+yourls_user: username2
+yourls_pass: password2
+yourls_debug: "false"
+yourls_url_convert: 36
+yourls_table_url: url
+yourls_reserved_url: "'porn', 'faggot', 'sex', 'nigger', 'fuck', 'cunt', 'dick'"
+yourls_personal_settings: ""
+yourls_php_version: php7.2

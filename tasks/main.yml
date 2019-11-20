@@ -1,0 +1,50 @@
+---
+# tasks file for yourls
+- name: updating apt cache
+  apt:
+    update_cache: yes
+
+- name: create web directory
+  file: 
+    path: "{{ yourls_www_dir }}"
+    state: directory
+    mode: '0755'
+
+- name: Extracting YOURLS
+  unarchive:
+    src: https://github.com/YOURLS/YOURLS/archive/{{ yourls_version }}.tar.gz
+    dest: /root
+    remote_src: yes
+
+- name: Move YOURLS
+  copy: 
+    src: /root/YOURLS-{{ yourls_version }}/
+    dest: "{{ yourls_www_dir }}/"
+    remote_src: yes
+
+- name: creating a default index.html file
+  copy:
+    src: files/{{ yourls_index }}
+    dest: "{{ yourls_www_dir }}/index.html"
+
+- name: creating image for index file.
+  copy:
+    src: files/{{ yourls_image }}
+    dest: "{{ yourls_www_dir }}/images"
+
+- name: creating .htaccess file
+  copy:
+    src: files/htaccess
+    dest: "{{ yourls_www_dir }}"
+
+- template:
+    src: templates/config.php.j2
+    dest: "{{ yourls_www_dir }}/user/config.php"
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Reload php-fpm
+  service:
+    name: {{ yourls_php_version }}-fpm
+    state: reloaded
