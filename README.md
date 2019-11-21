@@ -5,11 +5,12 @@ This role installs and configures YOURLS.
 
 Requirements
 ------------
-This role requires:
+This role was built to be used with:
 
 	geerlingguy.apache
 	geerlingguy.apache-php-fpm
 	geerlingguy.php
+    geerlingguy.php-versions
 
 Role Variables
 --------------
@@ -50,6 +51,7 @@ Example Playbook
 
       roles:
         - geerlingguy.apache
+        - geerlingguy.php-versions
         - geerlingguy.php
         - geerlingguy.apache-php-fpm
         - fastparrot.yourls
