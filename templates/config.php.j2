@@ -63,7 +63,9 @@ define( 'YOURLS_COOKIEKEY', '{{ yourls_cookiekey }}' );
  ** YOURLS will auto encrypt plain text passwords in this file
  ** Read http://yourls.org/userpassword for more information */
 $yourls_user_passwords = array(
-	'{{ yourls_user }}' => '{{ yourls_pass }}',
+	{% for user in yourls_users %}
+		'{{ user.user }}' => '{{ user.pass }}',
+	{% endfor %}
 	// 'username2' => 'password2',
 	// You can have one or more 'login'=>'password' lines
 	);
