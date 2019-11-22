@@ -20,6 +20,7 @@ Role Variables
 * yourls_index
 * yourls_db_name
 * yourls_db_user
+* yourls_db_pass
 * yourls_db_host
 * yourls_db_prefix
 * yourls_site
