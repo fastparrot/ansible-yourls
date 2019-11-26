@@ -27,11 +27,6 @@
     src: files/{{ yourls_index }}
     dest: "{{ yourls_www_dir }}/index.html"
 
-- name: creating image for index file.
-  copy:
-    src: files/{{ yourls_image }}
-    dest: "{{ yourls_www_dir }}/images"
-
 - name: creating .htaccess file
   copy:
     src: files/htaccess

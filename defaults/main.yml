@@ -3,7 +3,6 @@
 # https://github.com/YOURLS/YOURLS/blob/master/user/config-sample.php
 yourls_version: 1.7.4
 yourls_www_dir: /var/www/html
-yourls_image: image.jpg
 yourls_index: yourls_index.html
 yourls_db_name: example_db
 yourls_db_user: example_user

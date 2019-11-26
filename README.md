@@ -16,7 +16,6 @@ Role Variables
 --------------
 * yourls_version
 * yourls_www_dir
-* yourls_image
 * yourls_index
 * yourls_db_name
 * yourls_db_user
