@@ -30,7 +30,7 @@
 - name: creating .htaccess file
   copy:
     src: files/htaccess
-    dest: "{{ yourls_www_dir }}"
+    dest: "{{ yourls_www_dir }}/.htaccess"
 
 - name: Copy template into yourls config 
   template:
