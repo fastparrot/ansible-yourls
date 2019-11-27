@@ -5,12 +5,14 @@ This role installs and configures YOURLS.
 
 Requirements
 ------------
-This role was built to be used with:
+This role has no requirements, but was built to be used with:
 
 	geerlingguy.apache
 	geerlingguy.apache-php-fpm
 	geerlingguy.php
     geerlingguy.php-versions
+
+It also requires MySQL
 
 Role Variables
 --------------
