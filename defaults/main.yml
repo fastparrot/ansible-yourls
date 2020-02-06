@@ -1,7 +1,7 @@
 ---
 # For more information about YOURLS vars check here:
 # https://github.com/YOURLS/YOURLS/blob/master/user/config-sample.php
-yourls_version: 1.7.4
+yourls_version: 1.7.6
 yourls_www_dir: /var/www/html
 yourls_index: yourls_index.html
 yourls_db_name: example_db
